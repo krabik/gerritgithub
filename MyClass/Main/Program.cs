@@ -20,8 +20,6 @@ namespace Main
             Console.WriteLine("Hit 'Enter' lo leave...");
             Console.ReadLine();
 
-
-
         }
     }
 }
