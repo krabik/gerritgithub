@@ -97,11 +97,26 @@ namespace UT_Project
             MyMath target = new MyMath(); // TODO: Initialize to an appropriate value
             int x = 2; // TODO: Initialize to an appropriate value
             int y = 3; // TODO: Initialize to an appropriate value
-            double expected = 5; // TODO: Initialize to an appropriate value
+            double expected = 6; // TODO: Initialize to an appropriate value
             double actual;
             actual = target.Multi(x, y);
             Assert.AreEqual(expected, actual);
             Assert.Inconclusive(string.Format("Verify the correctness of MultiTest(){0} method.", arg0: "ARG0"));
+        }
+
+    
+        [TestMethod()]
+        public void SubstTest()
+        {
+            MyMath target =new MyMath();
+            int x = 2;
+            int y = 2;
+            int exp = 0;
+            int act;
+            act = target.Subst(x, y);
+            Assert.AreEqual(exp, act);
+            Assert.Inconclusive("Verify the correctness of SubstTest() method.");
+
         }
 
         /// <summary>
@@ -111,13 +126,13 @@ namespace UT_Project
         public void SumTest()
         {
             MyMath target = new MyMath(); // TODO: Initialize to an appropriate value
-            int x = 0; // TODO: Initialize to an appropriate value
-            int y = 0; // TODO: Initialize to an appropriate value
-            int expected = 0; // TODO: Initialize to an appropriate value
+            int x = 3; // TODO: Initialize to an appropriate value
+            int y = 4; // TODO: Initialize to an appropriate value
+            int expected = 7; // TODO: Initialize to an appropriate value
             int actual;
             actual = target.Sum(x, y);
             Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("Verify the correctness of this test method.");
+            Assert.Inconclusive("Verify the correctness of SumTest() method.");
         }
     }
 }

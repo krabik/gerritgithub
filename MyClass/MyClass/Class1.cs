@@ -22,6 +22,12 @@ namespace MyClass
             return x*y;
         }
 
+        public int Subst(int x, int y)
+        {
+            return x - y;
+        }
+
+
     }
 
     public class MyString
